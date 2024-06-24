@@ -1,0 +1,258 @@
+/*GENERAL------------------------------------------------------------------------------------------*/
+:root{
+    --primcolor: #0b1d26;
+    --seccolor: #fbd784;
+    --white: #fff;
+}
+
+*{
+    margin: 0;         /*J'aurais pas dû le mettre vu que j'ai un normalize mais vu que je viens de finir et que si je l'enlève ça me déplace tout et ben je le laisse du coup...*/
+    padding: 0;
+}
+
+body{
+    background-color: var(--primcolor);
+    background-image:radial-gradient(rgba(255,255,255,0),rgba(11,29,38,1)),url(./images/banniere.jpg);
+    background-repeat: no-repeat;
+    background-position-y:-40vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: var(--white);
+}
+
+h1{
+    font-family: 'Andada Pro', serif;
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--white);
+    width:100%;
+}
+
+h2{
+    font-family: 'Andada Pro', serif;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+h3{
+    font-family: 'Andada Pro', serif;
+    font-size:1.5rem;
+    color: var(--seccolor);
+}
+
+p{
+    line-height: 2rem;
+}
+
+a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:visited, :link, :focus{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--seccolor);
+}
+
+.pretitre{
+    width:100%;
+    gap: 2rem;
+}
+
+.pretext{
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight:100;
+    color: var(--seccolor);
+    font-style: italic;
+}
+
+.readmore{
+    color: var(--seccolor);
+}
+
+.readmore:hover{
+    scale: 1.2;
+    transition: transform, 0.5s;
+}
+
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+.itemcenter{
+    align-items: center;
+}
+
+.justcenter{
+    justify-content: center;
+}
+
+.padding{
+    padding: 0 15%;
+}
+ 
+.brand{
+    font-size:25px ;
+    font-family: 'Andada Pro', serif;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.tiret{
+    font-weight: 900;
+    letter-spacing: -4px;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: var(--seccolor);
+}
+
+.paddingbot{
+    padding-bottom: 10rem;
+}
+
+.aspectchiffre{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14rem;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.1);
+    width: fit-content;
+}
+/*HEADER------------------------------------------------------------------------------------------*/
+header{
+    padding:0 3%;                            /*pas de sticky a cause du chevauchement avec les textes*/
+}
+
+header nav{
+    height: 10vh;
+}
+
+.liensmid{
+    width:15%;
+}
+
+.bold{
+    font-weight: bold;
+}
+/*NAV FOLLOW------------------------------------------------------------------------------------------*/
+.follow{
+    height: 18vh;
+    position:fixed;
+    top:370px;
+    left:2vw;
+}
+
+.follow a:hover{
+    scale: 1.5;
+    transition: transform, 0.5s;
+}
+
+.follow p{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 18px;
+}
+/*NAV PAGELINK------------------------------------------------------------------------------------------*/
+.pagelink{
+    height:30vh;
+    width: fit-content;
+    position: fixed;
+    top:300px;
+    right:2vw;
+    border-right: solid 2px rgba(255,255,255,0.5);
+    padding:0 10px;
+    justify-content: space-around;
+}
+
+.pagelink a:hover{
+    scale: 1.5;
+    transition: transform, 0.5s;
+}
+/*HERO------------------------------------------------------------------------------------------*/
+.hero{
+    height: 70vh;
+    padding-bottom: 70vh;
+}
+
+.containerhero{
+    width: 48%;
+    gap: 3rem;
+}
+
+.fleche{
+    font-size: 2rem;
+}
+
+.scroll{
+    gap:10px;
+}
+/*GETSTARTED------------------------------------------------------------------------------------------*/
+.containersection01-03{
+    justify-content:end;
+    gap:90px;
+}
+
+.textcard{
+    width:45%;
+    gap:30px;
+}
+
+.portion img{
+    width: 40%;
+}
+
+.chiffre01{                  /*Voir si meilleure solution pour le placement des gros chiffres*/
+    position: relative;
+    top:150px;
+    left: -30px;
+}
+/*HIKING ESSENTIAL------------------------------------------------------------------------------------------*/
+.chiffre02{            
+    position: relative;
+    top:170px;
+    left:585px;
+}
+/*WHERE YOU GO IS THE KEY------------------------------------------------------------------------------------------*/
+.chiffre03{
+    position: relative;
+    top:150px;
+    left: -30px;
+}
+/*FOOTER------------------------------------------------------------------------------------------*/
+footer{
+    margin: 5rem 0;
+}
+
+.gauche{
+    width: 60%;
+}
+
+.gauche div{
+    gap: 30px;
+}
+
+.milieu{
+    width: 25%;
+    gap:1.5rem;
+}
+
+.droite{
+    width:fit-content;
+    gap:1.5rem;
+}
+
+.copyright{
+    color: grey;
+}
