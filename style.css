@@ -8,6 +8,7 @@
 *{
     margin: 0;         /*J'aurais pas dû le mettre vu que j'ai un normalize mais vu que je viens de finir et que si je l'enlève ça me déplace tout et ben je le laisse du coup...*/
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -140,7 +141,7 @@ header nav{
 }
 
 .liensmid{
-    width:15%;
+    width:25%;
 }
 
 .bold{
@@ -182,8 +183,7 @@ header nav{
 }
 /*HERO------------------------------------------------------------------------------------------*/
 .hero{
-    height: 70vh;
-    padding-bottom: 70vh;
+    height: 100vh;
 }
 
 .containerhero{
@@ -236,7 +236,7 @@ footer{
 }
 
 .gauche{
-    width: 60%;
+    width: 25%;
 }
 
 .gauche div{
@@ -255,4 +255,139 @@ footer{
 
 .copyright{
     color: grey;
+}
+
+@media all and (max-width:840px){
+    h1{
+        font-size: 2rem;
+    }
+    .liensmid{
+        display: none;
+    }
+    .follow{
+        display: none;
+    }
+    .pagelink{
+        display: none;
+    }
+    .containerhero{
+        width: 80%;
+    }
+    .chiffre01{
+        position:relative;
+        top: 0;
+        left: 0;
+    }
+    .chiffre02{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .chiffre03{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .aspectchiffre{
+        font-size: 10rem;
+    }
+    .textcard{
+        width: 90%;
+    }
+    .padding{
+        padding: 0 16px;
+    }
+    .portion img{
+        width: 100%;
+    }
+    .containersection02{
+        flex-direction: column-reverse;
+        gap: 90px;
+    }
+    .portion{
+        margin-bottom: 10rem;
+    }
+    .pretext{
+        font-size: 12px;
+    }
+    #start{
+        align-items: center;
+    }
+    .column{
+        width: 100%;
+    }
+    footer{
+        gap: 64px;
+    }
+    .gauche{
+        gap: 32px;
+    }
+}
+@media all and (min-width:751px) and (max-width:1200px){
+    h1{
+        font-size: 3rem;
+    }
+    .liensmid{
+        display: none;
+    }
+    .follow{
+        display: none;
+    }
+    .pagelink{
+        display: none;
+    }
+    .containerhero{
+        width: 80%;
+    }
+    .chiffre01{
+        position:relative;
+        top: 0;
+        left: 0;
+    }
+    .chiffre02{
+        position: relative;
+        top: 0;
+        left: 420px;
+    }
+    .chiffre03{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .aspectchiffre{
+        font-size: 10rem;
+    }
+    .textcard{
+        width: 55%;
+    }
+    .padding{
+        padding: 0 32px;
+    }
+    .portion img{
+        width: 30%;
+    }
+    .containersection02{
+        gap: 5%;
+    }
+    .containersection01-03{
+        gap: 5%;
+    }
+    .portion{
+        margin-bottom: 10rem;
+    }
+
+    #start{
+        align-items: center;
+    }
+    .column{
+        width: 100%;
+        
+    }
+    footer{
+        gap: 64px;
+        text-align: center;
+    }
+    .gauche{
+        gap: 32px;
+    }
 }

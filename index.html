@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>                <!--HEADER--------------------------------------------------------------------->
+    <header>                <!--HEADER-->
 
         <nav class="flexwrap spacebetween itemcenter">
 
@@ -33,7 +34,7 @@
 
     </header>
 
-    <main>                  <!--MAIN--------------------------------------------------------------------->
+    <main>                  <!--MAIN-->
 
         <nav class="follow flexwrap spacebetween itemcenter column">
             <p>Follow us</p>
@@ -41,7 +42,7 @@
             <a href="https://twitter.com" title="Accès à twitter"><i class="fa-brands fa-twitter"></i></a>
         </nav>
 
-        <section id="start" class="hero flexwrap justcenter itemcenter">              <!--HERO--------------------------------------------------------------------->
+        <section id="start" class="hero flexwrap justcenter itemcenter">              <!--HERO-->
 
             <div class="containerhero flexwrap">
 
@@ -68,7 +69,7 @@
             <a href="#03" title="Accès à la section 03">03</a>
         </nav>
 
-        <section class="portion started spacebetween padding paddingbot" id="01">              <!--01 GETSTARTED--------------------------------------------------------------------->
+        <section class="portion started spacebetween padding paddingbot" id="01" data-aos="fade-right" data-aos-duration="1500">              <!--01 GETSTARTED-->
 
             <p class="chiffre01 aspectchiffre">01</p>
 
@@ -99,7 +100,8 @@
 
         </section>
 
-        <section class="portion hiking spacebetween padding paddingbot" id="02">              <!--02 HIKING ESSENTIALS--------------------------------------------------------------------->
+        <section class="portion hiking spacebetween padding paddingbot" id="02" data-aos="fade-left" data-aos-duration="1500">              
+            <!--02 HIKING ESSENTIALS-->
 
             <p class="chiffre02 aspectchiffre">02</p>
 
@@ -122,14 +124,14 @@
                         and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
                     </p>
                     <a href="" class="readmore" title="Accès à en savoir plus sur hiking gear">read more ➜</a>
-
                 </div>
 
             </div>
             
         </section>
 
-        <section class="where portion spacebetween padding paddingbot" id="03">              <!--03 WHERE YOU GO IS THE KEY--------------------------------------------------------------------->
+        <section class="where portion spacebetween padding paddingbot" id="03" data-aos="fade-right" data-aos-duration="1500">             
+             <!--03 WHERE YOU GO IS THE KEY-->
             
             <p class="chiffre03 aspectchiffre">03</p>
 
@@ -161,7 +163,7 @@
 
     </main>                 
 
-    <footer class="flexwrap spacebetween padding">              <!--FOOTER--------------------------------------------------------------------->
+    <footer class="flexwrap spacebetween padding">              <!--FOOTER-->
 
         <div class="gauche flexwrap column spacebetween">
             <div class="flexwrap column">
@@ -190,6 +192,9 @@
         </div>
 
     </footer>
-
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
